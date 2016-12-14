@@ -1,0 +1,196 @@
+.wjs_product{
+    padding: 20px;
+    background-color: #eee;
+}
+
+.nav-product_tabs {
+    border-bottom: 1px solid #ddd;
+}
+.nav-product_tabs > li {
+    float: left;
+    margin-bottom: -1px;
+    padding: 0px 15px;
+}
+.nav-product_tabs > li > a {
+    margin-right: 2px;
+    line-height: 1.42857143;
+}
+.nav-product_tabs > li > a:hover {
+    background-color: #fff;
+    background-color: transparent;
+    border-bottom: 3px solid #e92322;
+}
+.nav-product_tabs > li.active > a,
+.nav-product_tabs > li.active > a:hover,
+.nav-product_tabs > li.active > a:focus {
+    color: #555;
+    cursor: default;
+    border-bottom: 3px solid #e92322;
+}
+.nav-product_tabs.nav-justified {
+    width: 100%;
+    border-bottom: 0;
+}
+.nav-product_tabs.nav-justified > li {
+    float: none;
+}
+.nav-product_tabs.nav-justified > li > a {
+    margin-bottom: 5px;
+    text-align: center;
+}
+.nav-product_tabs.nav-justified > .dropdown .dropdown-menu {
+    top: auto;
+    left: auto;
+}
+@media (min-width: 768px) {
+    .nav-product_tabs.nav-justified > li {
+        display: table-cell;
+        width: 1%;
+    }
+    .nav-product_tabs.nav-justified > li > a {
+        margin-bottom: 0;
+    }
+}
+.nav-product_tabs.nav-justified > li > a {
+    margin-right: 0;
+    border-radius: 4px;
+}
+.nav-product_tabs.nav-justified > .active > a,
+.nav-product_tabs.nav-justified > .active > a:hover,
+.nav-product_tabs.nav-justified > .active > a:focus {
+    border: 1px solid #ddd;
+}
+@media (min-width: 768px) {
+    .nav-product_tabs.nav-justified > li > a {
+        border-bottom: 1px solid #ddd;
+        border-radius: 4px 4px 0 0;
+    }
+    .nav-product_tabs.nav-justified > .active > a,
+    .nav-product_tabs.nav-justified > .active > a:hover,
+    .nav-product_tabs.nav-justified > .active > a:focus {
+        border-bottom-color: #fff;
+    }
+}
+
+.wjs_product .product-box{
+    height: 150px;
+    margin-top: 15px;
+    border: 1px solid #ddd;
+    box-shadow: 1px 1px 1px #ccc;
+    padding: 0;
+    font-size: 12px;
+    background-color: #fff;
+}
+.wjs_product .product-box.active{
+    background-color: #e92322;
+    color: white;
+}
+.wjs_product .product-box > .left{
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.wjs_product .product-box > .left::before{
+    content: "\e915";
+    font-family: wjs; /*一定要记得设置字体*/
+    position: absolute;
+    left: 0;
+    top: -9px;
+    color: white;
+    font-size: 40px;
+}
+.wjs_product .product-box > .left > h4{
+    text-align: center;
+    color: #666;
+    font-size: 15px;
+}
+.wjs_product .product-box.active > .left > h4{
+    color: white;
+}
+.wjs_product .product-box > .left > div:nth-of-type(odd){
+    text-align: left;
+    padding-right: 0;
+    padding-left: 10px;
+}
+.wjs_product .product-box > .left > div:nth-of-type(even){
+    text-align: right;
+    padding-left: 0;
+    padding-right: 10px;
+}
+
+.wjs_product .product-box > .right{
+    width: 100px;
+    height: 100%;
+    float: right;
+    text-align: center;
+    padding-top:20px;
+    position: relative;
+    border-left: 1px dashed #ccc;
+}
+.wjs_product .product-box > .right > span{
+    font-size: 50px;
+    font-weight: bold;
+    color: #e92322;
+}
+.wjs_product .product-box > .right >.infoTip{
+    width:100%;
+    position: absolute;
+    text-align: center;
+    top: 15px;
+    left:0;
+    /*通过transform可以参照本身的宽度进行偏移*/
+   /* transform:translateX(-50%);
+    -webkit-transform:translateX(-50%); ;*/
+}
+.wjs_product .product-box > .right >.infoTip >span{
+    font-size: 13px;
+    line-height: 13px;
+    width: 15px;
+    height: 16px;
+    display: inline-block;
+}
+.wjs_product .product-box > .right >.infoTip >span:first-of-type{
+    color: red;
+    border: 1px solid red;
+}
+.wjs_product .product-box > .right >.infoTip >span:last-of-type{
+    color: blue;
+    border: 1px solid blue;
+}
+.wjs_product .product-box.active > .right > span,
+.wjs_product .product-box.active > .right > sub{
+    color:white;
+}
+.wjs_product .product-box > .right > sub{
+    color: #e92322;
+    bottom: 0;
+}
+
+.wjs_product .product-box > .right::before,
+.wjs_product .product-box > .right::after{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #eee;
+    left: -5px;
+}
+.wjs_product .product-box > .right::before{
+    top: -5px;
+    box-shadow: 0px -1px 1px #ddd inset;
+}
+.wjs_product .product-box > .right::after{
+    bottom: -5px;
+    box-shadow: 0px 1px 1px #ddd inset;
+}
+.wjs_product .progress{
+    height:12px;
+}
+.wjs_product .progress > .progress-bar{
+    line-height:12px;
+}
+
+.ptabs-parent{
+    overflow: hidden;
+}

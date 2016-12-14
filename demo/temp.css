@@ -1,0 +1,29 @@
+/*定义变量*/
+div {
+  color: #e92322;
+}
+a {
+  color: #e92322;
+}
+/*如果是定义功能块：那么不是使用@,而是使用选择器*/
+/*.addBorder{
+  border:1px solid @color;
+}*/
+header {
+  /*.addBorder(2px);*/
+  width: 200px;
+  height: 200px;
+  border: 1px solid #e92322;
+}
+.banner {
+  background-color: #ccc;
+}
+.banner > .div {
+  color: #fa4555;
+}
+.banner.active {
+  background-color: red;
+}
+.banner :hover {
+  color: blue;
+}

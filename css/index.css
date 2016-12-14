@@ -1,0 +1,183 @@
+body{
+    font-family: "Microsoft YaHei",sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+a:hover{
+    text-decoration: none;
+    color: #333;
+}
+.m_l10{
+    margin-left: 10px;
+}
+.m_r10{
+    margin-right: 10px;
+}
+/*定义字体*/
+@font-face {
+    font-family: 'wjs';
+    src: url('../fonts/MiFie-Web-Font.eot'); /* IE9*/
+    src: url('../fonts/MiFie-Web-Font.eot') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/MiFie-Web-Font.woff') format('woff'), /* chrome、firefox */
+    url('../fonts/MiFie-Web-Font.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('../fonts/MiFie-Web-Font.svg') format('svg'); /* iOS 4.1- */
+}
+/*定义自己的字体样式*/
+.font_icon{
+    font-family: wjs;
+}
+.font_icon_phone::before{
+    content: "\e908";
+}
+.font_icon_tel::before{
+    content: "\e909";
+}
+
+.font_icon_new01::before{
+    content: "\e90e";
+}
+.font_icon_new02::before{
+    content: "\e90f";
+}
+.font_icon_new03::before{
+    content: "\e910";
+}
+.font_icon_new04::before{
+    content: "\e911";
+}
+.font_icon_partner01::before{
+    content:"\e946";
+}
+.font_icon_partner02::before{
+    content: "\e92f";
+}
+.font_icon_partner03::before{
+    content: "\e92e";
+}
+.font_icon_partner04::before{
+    content: "\e92a";
+}
+.font_icon_partner05::before{
+    content: "\e929";
+}
+.font_icon_partner06::before{
+    content: "\e931";
+}
+.font_icon_partner07::before{
+    content: "\e92c";
+}
+.font_icon_partner08::before{
+    content: "\e92b";
+}
+.font_icon_partner09::before{
+    content: "\e92d";
+}
+.font_iconn_E903::before{
+    content: "\e903";
+}
+.font_icon_E906::before{
+    content: "\e906";
+}
+.font_icon_E905::before{
+    content: "\e905";
+}
+.font_icon_E907::before{
+    content: "\e907";
+}
+.font_icon_E901::before{
+    content: "\e901";
+}
+.font_icon_E900::before{
+    content: "\e900";
+}
+.font_icon_E904::before{
+    content: "\e904";
+}
+.font_icon_E902::before{
+    content: "\e902";
+}
+.font_icon_E906::before{
+    content: "\e906";
+}
+
+/*wjs logo*/
+.font_icon_logo::before{
+    content: "\e920";
+    font-size: 50px;
+    color: #e92322;
+}
+/*wjs 文本*/
+.font_icon_text::before{
+    content: "\e93e";
+    font-size: 40px;
+    color: black;
+}
+/*顶部块样式*/
+header{
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #ccc;
+}
+header .row > div{
+    border-right: 1px solid #ccc;
+    text-align: center;
+}
+header .row > div:last-of-type{
+    border-right: none;
+}
+header .wjs_logo{
+    position: relative;
+    width:100%;
+    height: 100%;
+    display: block;
+}
+header .wjs_logo > img{
+    border: 1px solid #ccc;
+    border-top: none;
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 39px;
+    margin-left:-60px;
+}
+header .wjs_logo:hover > img{
+    display: block;
+}
+header .register{
+    padding:2px 15px
+}
+
+.wjs_info{
+    padding:30px;
+    border: 1px solid #ccc;
+}
+.wjs_info .row > div{
+    margin-top:50px;
+}
+.wjs_info [class *='font_icon_']{
+    font-size: 30px;
+}
+
+.wjs_reserve{
+    height: 50px;
+    line-height:50px;
+    border-bottom: 1px solid #ccc;
+}
+
+.wjs_reserve [class *='font_icon_']{
+    font-size: 18px;
+}
+.wjs_reserve .font_icon_E905{
+    font-size: 25px;
+}
+.wjs_reserve .col-sm-9 a:first-of-type:hover{
+    color: #e92322;
+}
+.wjs_reserve .col-sm-9 a:last-of-type{
+    color: #e92322;
+    border-bottom: 1px dashed #e92322;
+}
